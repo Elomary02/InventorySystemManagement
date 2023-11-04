@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestioninventairemagasin.AccountController">
+   <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="53.0" style="-fx-background-color: purple;">
+         <children>
+            <AnchorPane layoutY="110.0" prefHeight="52.0" prefWidth="53.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="17.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/home-icon.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btn_home" layoutX="16.0" layoutY="6.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-cursor: hand;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="174.0" prefHeight="52.0" prefWidth="53.0" style="-fx-background-color: purple;">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/items.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btn_items" layoutX="13.0" layoutY="10.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-cursor: hand;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-1.0" layoutY="318.0" prefHeight="61.0" prefWidth="60.0" />
+            <Button fx:id="btn_logout" layoutX="17.0" layoutY="335.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+
+            <ImageView fitHeight="24.0" fitWidth="47.0" layoutX="5.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/pic1.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutY="240.0" prefHeight="45.0" prefWidth="53.0" style="-fx-background-color: #e9e9e9;">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/acc.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btn_acc" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-cursor: hand;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="541.0" style="-fx-background-color: #e9e9e9;">
+         <children>
+            <Button fx:id="btn_update" layoutX="320.0" layoutY="315.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/update.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="169.0" layoutY="99.0" prefHeight="28.0" prefWidth="203.0" text="Your Personal Informations:">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="41.0" layoutY="246.0" prefHeight="28.0" prefWidth="203.0" text="Password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="41.0" layoutY="171.0" prefHeight="28.0" prefWidth="203.0" text="Full Name">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="41.0" layoutY="210.0" prefHeight="28.0" prefWidth="203.0" text="Username">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_fullName" layoutX="261.0" layoutY="172.0" prefHeight="25.0" prefWidth="203.0" />
+            <TextField fx:id="tf_username" layoutX="261.0" layoutY="211.0" prefHeight="25.0" prefWidth="203.0" />
+            <TextField fx:id="tf_password" layoutX="261.0" layoutY="247.0" prefHeight="25.0" prefWidth="203.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
